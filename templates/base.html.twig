@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+		<link
+		rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+		{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"/>
+			<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+		{% endblock %}
+
+		{% block javascripts %}
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+		{% endblock %}
+	</head>
+	<body>
+
+		{% block nav %}
+			<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+				<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+					<button class="menu-btn uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Menu</button>
+					<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+						<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+							<div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+
+								<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+
+									<li class="uk-active">
+										<a href="#" uk-scroll>Accueil</a>
+									</li>
+									<li class="uk-active">
+										<a href="#soft-skills" uk-scroll>Mon parcours</a>
+									</li>
+									<li class="uk-active">
+										<a href="#projects" uk-scroll>Mes projets</a>
+									</li>
+									<li class="uk-active">
+										<a href="#knowledge" uk-scroll>Mes compétences</a>
+									</li>
+									<li class="uk-active">
+										<a href="#contact" uk-scroll>Mes coordonnées</a>
+									</li>
+									<li class="uk-active">
+										<a href="#cv" uk-scroll>Mon CV</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		{% endblock nav %}
+
+		{% block body %}{% endblock body %}
+	</body>
+</html>
