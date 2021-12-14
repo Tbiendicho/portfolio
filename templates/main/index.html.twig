@@ -16,7 +16,7 @@
 				<img class="photo" src="{{ asset('img/photo.png')}}" alt="">
 			</div>
 		</div>
-		<div>
+		<div class="choices">
 			<div>
 				<p>
 					<a class="choice" href="#soft-skills">
@@ -69,18 +69,18 @@
 		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
-					<img src="{{ asset('img/myas.jpg')}}" class="card-img-top" alt="...">
+					<a href="http://ec2-3-83-182-226.compute-1.amazonaws.com"><img src="{{ asset('img/myas.jpg')}}" class="card-img-top" alt="..."></a>
 				</div>
 				<div class="card-body d-flex flex-column justify-content-center">
 					<p class="card-title">MYAS Gallery</p>
-					<p class="card-text">MYAS Gallery est une galerie d'art itinérante, dont le site a été réalisé dans le cadre du projet de fin de ma formation chez O'Clock. J'ai pour ma part réalisé le Backoffice en binôme</p>
+					<p class="card-text">MYAS Gallery est une galerie d'art itinérante, dont le site a été réalisé dans le cadre du projet de fin de ma formation. J'ai pour ma part réalisé le Backoffice en binôme</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
-					<img src="{{ asset('img/test.svg')}}" class="card-img-top" alt="...">
+					<a href="https://lol.thomas-biendicho.fr"><img src="{{ asset('img/test2.svg')}}" class="card-img-top" alt="..."></a>
 				</div>
 				<div class="card-body d-flex flex-column justify-content-center">
 					<p class="card-title">Learn Or Laught</p>
@@ -91,7 +91,7 @@
 		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
-					<img src="{{ asset('img/test2.svg')}}" class="card-img-top" alt="...">
+					<a href=""><img src="{{ asset('img/test2.svg')}}" class="card-img-top" alt="..."></a>
 				</div>
 				<div class="card-body d-flex flex-column justify-content-center">
 					<p class="card-title">TO DO List</p>
@@ -114,7 +114,9 @@
 
 <div id="contact" class="block contact">
 	<h2>Mes coordonnées</h2>
-	<p>Téléphone</p>
-	<p>Mail</p>
-	<p>Présentation</p>
+	<div class="contact-infos">
+		<p>Téléphone</p>
+		<p>Mail</p>
+		<p>Présentation</p>
+	</div>
 </div>{% endblock %}
