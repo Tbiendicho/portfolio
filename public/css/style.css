@@ -2,6 +2,11 @@ body {
     background-image: radial-gradient(circle at 50% 50%, #4aa1ff 0, #1d6cc4 50%, #003b76 100%);
 }
 
+.menu-btn {
+    top: 0;
+    left: 0;
+}
+
 nav li a,
 .menu-btn {
     color: white;
@@ -137,6 +142,10 @@ h2 {
     width: auto;
 }
 
+.img {
+    justify-content: center;
+}
+
 .card-body {
     text-align: justify;
     width: 90%;
@@ -210,7 +219,7 @@ h2 {
 .cv-img {
     height: 200px;
     width: 200px;
-    margin: 3em 0 1em 0;
+    margin: 5em 0 1em 0;
 }
 
 @media (max-width: 1200px) {
@@ -238,7 +247,7 @@ h2 {
     .name,
     .job {
         text-align: center;
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .photo {
@@ -253,7 +262,7 @@ h2 {
 
     .choice,
     .last-choice {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .menu-btn {
@@ -262,7 +271,7 @@ h2 {
     }
 
     .offcanvas-title {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .offcanvas-header {
@@ -278,9 +287,8 @@ h2 {
 
     .card-title,
     .card-text,
-    .white-text,
-    .contact-infos {
-        font-size: 1.5em;
+    .white-text {
+        font-size: 2em;
     }
 
     .contact-items {
@@ -292,6 +300,14 @@ h2 {
     .contact {
         padding-left: 3em;
         padding-right: 3em;
+    }
+
+    .contact-infos, .cv p {
+        font-size: 1.5em;
+    }
+
+    .cv-img {
+        margin-top: 2em;
     }
 
 }
