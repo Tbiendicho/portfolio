@@ -32,11 +32,23 @@
 			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
-				<div><a href="#contact">Contact</a></div>
-				<div><a href="#knowledge">Connaissances</a></div>
+					<div class="menu-choice">
+						<a href="#soft-skills">Mon parcours</a>
+					</div>
+					<div class="menu-choice">
+						<a href="#projects">Mes projets</a>
+					</div>
+					<div class="menu-choice">
+						<a href="#knowledge">Mes compétences</a>
+					</div>
+					<div class="menu-choice">
+						<a href="#contact">Mes coordonnées</a>
+					</div>
+					<div class="menu-choice">
+						<a href="{{ asset('cv/CV BIENDICHO - Développeur Web & Web mobile.pdf')}}">Télécharger mon CV</a>
+					</div>
 				</div>
 			</div>
 
@@ -44,4 +56,4 @@
 
 		{% block body %}{% endblock body %}
 	</body>
-</html></body></html>
+</html>
