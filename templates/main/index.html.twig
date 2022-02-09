@@ -73,8 +73,8 @@
 
 	<h2>Mes projets</h2>
 
-	<div class="row projects d-flex justify-content-sm-between pt-5">
-		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
+	<div class="row projects d-flex flex-row justify-content-sm-between pt-5">
+		<div class="col-xl-3 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
 					<a href="https://myas.thomas-biendicho.fr/"><img src="{{ asset('img/myas.jpg')}}" class="card-img-top" alt="..."></a>
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
+		<div class="col-xl-3 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
 					<a href="https://lol.thomas-biendicho.fr"><img src="{{ asset('img/test2.svg')}}" class="card-img-top" alt="..."></a>
@@ -96,7 +96,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xl-4 col-sm-12 current-project d-flex justify-content-around">
+		<div class="col-xl-3 col-sm-12 current-project d-flex justify-content-around">
 			<div class="card project" style="width: 30rem;">
 				<div class="img">
 					<a href="https://todolist.thomas-biendicho.fr"><img src="{{ asset('img/todolist.png')}}" class="card-img-top" alt="..."></a>
@@ -104,6 +104,17 @@
 				<div class="card-body d-flex flex-column justify-content-center">
 					<p class="card-title">TodoList</p>
 					<p class="card-text">TodoList permettant de noter les tâches à faire. Une API fait le lien avec la base de données</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-3 col-sm-12 current-project d-flex justify-content-around">
+			<div class="card project" style="width: 30rem;">
+				<div class="img">
+					<a href="https://lactu.thomas-biendicho.fr"><img src="{{ asset('img/lactu.png')}}" class="card-img-top" alt="..."></a>
+				</div>
+				<div class="card-body d-flex flex-column justify-content-center">
+					<p class="card-title">L'Actu</p>
+					<p class="card-text">Agrégateur d'actualités faisant appel à une API et des flux RSS</p>
 				</div>
 			</div>
 		</div>
@@ -265,7 +276,7 @@
 			</span>
 		</div>
 		<div class="cv">
-			<a href="{{ asset('CV BIENDICHO - Développeur Web Backend.pdf')}}"><img class="cv-img" src="{{ asset('img/icons/cv.png')}}" alt=""></a>
+			<a href="{{ asset('cv/CV BIENDICHO - Développeur Web Backend.pdf')}}"><img class="cv-img" src="{{ asset('img/icons/cv.png')}}" alt=""></a>
 			<p style="color: white">Télécharger mon CV</p>
 		</div>
 	</div>
