@@ -92,6 +92,42 @@ a:hover,
     color: white;
 }
 
+.first, .second, .third, .fourth, .fifth, .last-choice {
+    opacity: 0;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: choices;
+}
+
+.first {
+    animation-delay: 0.5s;
+}
+
+.second {
+    animation-delay: 1s;
+}
+
+.third {
+    animation-delay: 1.5s;
+}
+
+.fourth {
+    animation-delay: 2s;
+}
+
+.fifth {
+    animation-delay: 2.5s;
+}
+
+.last-choice {
+    animation-delay: 3s;
+}
+
+@keyframes choices {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .main-btn:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -156,7 +192,7 @@ h2 {
 .card-title {
     text-align: center;
     font-weight: bold;
-    padding-bottom: 2em;
+    padding-bottom: 0.5em;
 }
 
 .white-text {
@@ -166,11 +202,13 @@ h2 {
 
 .soft-skills,
 .contact {
-    padding: 4em 15%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .formation {
-    padding: 4em 15%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: auto;
     background-image:
         linear-gradient(180deg,
@@ -178,7 +216,8 @@ h2 {
 }
 
 .knowledge {
-    padding: 4em 15%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: auto;
 }
 
@@ -231,6 +270,11 @@ h2 {
         border: 1px solid white;
         border-radius: 30px;
         background-color: #4c6a8f;
+    }
+
+    h2 {
+        font-size: 3em;
+        width: 60%;
     }
 
     .main-block-left {
